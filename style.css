@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    background: rgba(247, 234, 214, 0.342);
 }
 
 /* ============================= CABEÇALHO ============================= */
@@ -35,18 +36,37 @@ body {
     float: left;
     text-shadow: 2px 2px 15px white;
 }
+/* ==================== Anti CORPO ==================== */
+.antCorpo {
+    border: 1px solid black;
+    width: 70%;
+    height: 300px;
+    margin: 10px auto auto auto;
+
+}
 
 /* ==================== CORPO ==================== */
-.corpo {
+.corpoPrincipal {
     padding: 5px;
     width: 70%;
     margin: auto;
     margin-bottom: 20px;
 }
 
+.corpo {
+    padding: 5px;
+    width: 70%;
+    height: 500px;
+    margin: 10px auto auto auto;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.11);
+
+}
+
 .panel {
+    background-image: linear-gradient( rgb(204, 204, 204), white, rgb(223, 221, 221)) ;
     overflow: hidden;
-    width: 300px;
+    width: 295px;
     height: 250px;
     border: 1px solid rgb(192, 191, 191);
     box-shadow: 2px 2px 10px rosybrown;
@@ -62,6 +82,7 @@ body {
 }
 /* ==================== RODAPÉ ==================== */
 .rodape {
+    background-color:rgba(188, 143, 143, 0.151);
     text-align: justify;
     margin: auto;
     margin-top: 10px;
@@ -73,7 +94,10 @@ body {
     list-style-image: 
     url("./images/Insta.png");
     list-style-position: inside;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inst > a {
+    font-family: cursive, monospace;
 }
 
 /* ==================== OUTROS ==================== */
