@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -27,7 +30,7 @@ body {
 .menu > li {
     float: left;
     color: white;
-    margin-left: 35px;
+    margin-left: 25px;
     cursor: pointer;
     text-shadow: 2px 2px 15px black;
 }
@@ -38,11 +41,21 @@ body {
 }
 /* ==================== Anti CORPO ==================== */
 .antCorpo {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    box-shadow: 2px 2px 55px rgb(107, 106, 106);
     width: 70%;
-    height: 300px;
+    height: 200px;
     margin: 10px auto auto auto;
+    text-align: center;
+    background-image: linear-gradient(white, rosybrown, white);
+    overflow: hidden;
+}
 
+.antCorpo > h1 {
+    color:white;
+    font-family: 'Petit Formal Script';
+    font-size: 50px;
+    text-shadow: 2px 7px 5px black;
 }
 
 /* ==================== CORPO ==================== */
@@ -60,7 +73,11 @@ body {
     margin: 10px auto auto auto;
     margin-bottom: 20px;
     border: 1px solid rgba(128, 128, 128, 0.11);
+}
 
+.corpoContato {
+    text-align: justify;
+    width: 50%;
 }
 
 .panel {
@@ -106,15 +123,66 @@ a {
 }
 
 /* ==================== MEDIA QUERIES ==================== */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     body {
-        background-color: red;
+        background-color: white;
     }
+    .cabeçalho {
+        position: relative;
+        width: 94%;
+        text-align: center;
+        font-size: 28px;
+        background-image: linear-gradient(rosybrown, rgb(226, 223, 223), rosybrown);
+    }
+    
     .menu {
         float: none;
-        display: block;
-        margin: 0;
-        padding: 0;
+    }
+    
+    .menu > li {
+        float: none;
+        border: 1px solid rgba(99, 97, 97, 0.082);
+        box-shadow: 15px 5px 20px black;
+        margin: 10px;
+    }
+    .logo {
+        box-shadow: 15px 5px 20px black;
+        float: none;
+        text-shadow: 2px 2px 15px white;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+}
+
+/* ==================== MEDIA QUERIES Até 500px ==================== */
+@media screen and (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+    .cabeçalho {
+        position: relative;
+        width: 94%;
+        text-align: center;
+        font-size: 28px;
+        background-image: linear-gradient(rosybrown, rgb(226, 223, 223), rosybrown);
+    }
+    
+    .menu {
+        float: none;
+    }
+    
+    .menu > li {
+        float: none;
+        border: 1px solid rgba(99, 97, 97, 0.082);
+        box-shadow: 15px 5px 20px black;
+        margin: 10px;
+    }
+    .logo {
+        box-shadow: 15px 5px 20px black;
+        float: none;
+        text-shadow: 2px 2px 15px white;
+        font-size: 28px;
+        margin-bottom: 25px;
     }
 }
 
